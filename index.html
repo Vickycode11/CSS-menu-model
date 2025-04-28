@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation, Overflow, Inline-Block Task</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Horizontal Menu</h2>
+<div class="horizontal-menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+<h2>Vertical Menu</h2>
+<div class="vertical-menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+<h2>Dropdown Menu</h2>
+<div class="dropdown">
+  <button>Menu</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+<h2>Responsive Navigation Menu</h2>
+<div class="topnav" id="myTopnav">
+  <a href="#">Home</a>
+  <a href="#">Services</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<h2>Overflow in Container</h2>
+<div class="container">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra, nunc non hendrerit fringilla, sapien nunc vehicula purus, non elementum sapien lorem ut nulla. Sed lacinia, lorem a ultricies suscipit, odio felis facilisis nulla, vel luctus justo nisl eget metus.
+</div>
+
+<h2>Overflow in Text Block</h2>
+<div class="text-block">
+  This is a very long text that will not fit into the container and will demonstrate how text overflow behaves inside a limited size box.
+</div>
+
+<h2>Overflow in Image</h2>
+<div class="image-container">
+  <img src="https://via.placeholder.com/400x300" alt="Placeholder Image">
+</div>
+
+<h2>Overflow in Dropdown Menu</h2>
+<div class="dropdown-menu">
+  <div>Option 1</div>
+  <div>Option 2</div>
+  <div>Option 3</div>
+  <div>Option 4</div>
+  <div>Option 5</div>
+  <div>Option 6</div>
+  <div>Option 7</div>
+</div>
+
+<h2>Inline-block Property</h2>
+<div class="inline-block-box">Box 1</div>
+<div class="inline-block-box">Box 2</div>
+<div class="inline-block-box">Box 3</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</body>
+</html>
